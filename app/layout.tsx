@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   title: "Meeraj Mathin | Full Stack Developer",
   description: "Full Stack Developer portfolio",
   icons: {
-    icon: [],
+    icon: "/Meeraj.svg",
+    shortcut: "/Meeraj.svg",
+    apple: "/Meeraj.svg",
   },
 };
 

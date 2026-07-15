@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const brevoApiKey = process.env.BREVO_API_KEY;
-const brevoSenderEmail = process.env.BREVO_SENDER_EMAIL || "no-reply@yourdomain.com";
-const brevoSenderName = process.env.BREVO_SENDER_NAME || "Portfolio Contact";
-const brevoToEmail = process.env.BREVO_TO_EMAIL || "meerajmathin@gmail.com";
-
 export async function POST(request: NextRequest) {
+  const brevoApiKey = process.env.BREVO_API_KEY;
+  const brevoSenderEmail = process.env.BREVO_SENDER_EMAIL || "no-reply@yourdomain.com";
+  const brevoSenderName = process.env.BREVO_SENDER_NAME || "Portfolio Contact";
+  const brevoToEmail = process.env.BREVO_TO_EMAIL || "meerajmathin@gmail.com";
+
   try {
     const body = await request.json();
     const { name, email, subject, message } = body || {};
